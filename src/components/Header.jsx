@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { Button } from './ui/button';
 import { Menu, X, Shield, Phone, Globe } from 'lucide-react';
 import logo from '../assets/logo.png';
 
@@ -71,10 +70,13 @@ const Header = ({ currentLang, setCurrentLang, translations }) => {
           <div className="hidden md:flex items-center space-x-4">
             {/* Sélecteur de langue */}
             <div className="relative group">
-              <Button variant="outline" size="sm" className="bg-transparent border-primary text-white hover:bg-primary">
+              <button
+                type="button"
+                className="px-3 py-1 border border-primary rounded bg-transparent text-white hover:bg-primary flex items-center"
+              >
                 <Globe className="w-4 h-4 mr-2" />
                 {languages.find(lang => lang.code === currentLang)?.flag}
-              </Button>
+              </button>
               <div className="absolute top-full right-0 mt-2 bg-black border border-primary rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
                 {languages.map((lang) => (
                   <button
@@ -88,13 +90,13 @@ const Header = ({ currentLang, setCurrentLang, translations }) => {
               </div>
             </div>
 
-            <Button 
+            <button 
               onClick={() => scrollToSection('contact')}
-              className="bg-primary hover:bg-primary/90 text-white"
+              className="px-4 py-2 bg-primary hover:bg-primary/90 text-white rounded flex items-center"
             >
               <Phone className="w-4 h-4 mr-2" />
               {translations[currentLang].cta.contact}
-            </Button>
+            </button>
           </div>
 
           {/* Menu Mobile */}
@@ -161,13 +163,13 @@ const Header = ({ currentLang, setCurrentLang, translations }) => {
                 </div>
               </div>
 
-              <Button 
+              <button 
                 onClick={() => scrollToSection('contact')}
-                className="bg-primary hover:bg-primary/90 text-white mt-4"
+                className="px-4 py-2 bg-primary hover:bg-primary/90 text-white rounded flex items-center mt-4"
               >
                 <Phone className="w-4 h-4 mr-2" />
                 {translations[currentLang].cta.contact}
-              </Button>
+              </button>
             </nav>
           </div>
         )}
@@ -177,4 +179,3 @@ const Header = ({ currentLang, setCurrentLang, translations }) => {
 };
 
 export default Header;
-
