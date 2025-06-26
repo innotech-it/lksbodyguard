@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Menu, X, Shield, Phone, Globe } from 'lucide-react';
+import { Menu, X, Phone, Globe } from 'lucide-react';
 import logo from '../assets/logo.png';
 
 const Header = ({ currentLang, setCurrentLang, translations }) => {
@@ -29,7 +29,9 @@ const Header = ({ currentLang, setCurrentLang, translations }) => {
             <img src={logo} alt="LKS Bodyguard" className="h-12 w-12" />
             <div>
               <h1 className="text-xl font-bold text-white">LKS Bodyguard</h1>
-              <p className="text-sm text-primary">{translations[currentLang].tagline}</p>
+              <p className="text-sm text-primary">
+                {translations[currentLang]?.tagline}
+              </p>
             </div>
           </div>
 
@@ -39,31 +41,31 @@ const Header = ({ currentLang, setCurrentLang, translations }) => {
               onClick={() => scrollToSection('home')}
               className="text-white hover:text-primary transition-colors"
             >
-              {translations[currentLang].nav.home}
+              {translations[currentLang]?.nav.home}
             </button>
             <button 
               onClick={() => scrollToSection('services')}
               className="text-white hover:text-primary transition-colors"
             >
-              {translations[currentLang].nav.services}
+              {translations[currentLang]?.nav.services}
             </button>
             <button 
               onClick={() => scrollToSection('about')}
               className="text-white hover:text-primary transition-colors"
             >
-              {translations[currentLang].nav.about}
+              {translations[currentLang]?.nav.about}
             </button>
             <button 
               onClick={() => scrollToSection('testimonials')}
               className="text-white hover:text-primary transition-colors"
             >
-              {translations[currentLang].nav.testimonials}
+              {translations[currentLang]?.nav.testimonials}
             </button>
             <button 
               onClick={() => scrollToSection('contact')}
               className="text-white hover:text-primary transition-colors"
             >
-              {translations[currentLang].nav.contact}
+              {translations[currentLang]?.nav.contact}
             </button>
           </nav>
 
@@ -96,7 +98,7 @@ const Header = ({ currentLang, setCurrentLang, translations }) => {
               className="px-4 py-2 bg-primary hover:bg-primary/90 text-white rounded flex items-center"
             >
               <Phone className="w-4 h-4 mr-2" />
-              {translations[currentLang].cta.contact}
+              {translations[currentLang]?.cta.contact}
             </button>
           </div>
 
@@ -117,36 +119,36 @@ const Header = ({ currentLang, setCurrentLang, translations }) => {
                 onClick={() => scrollToSection('home')}
                 className="text-white hover:text-primary transition-colors text-left"
               >
-                {translations[currentLang].nav.home}
+                {translations[currentLang]?.nav.home}
               </button>
               <button 
                 onClick={() => scrollToSection('services')}
                 className="text-white hover:text-primary transition-colors text-left"
               >
-                {translations[currentLang].nav.services}
+                {translations[currentLang]?.nav.services}
               </button>
               <button 
                 onClick={() => scrollToSection('about')}
                 className="text-white hover:text-primary transition-colors text-left"
               >
-                {translations[currentLang].nav.about}
+                {translations[currentLang]?.nav.about}
               </button>
               <button 
                 onClick={() => scrollToSection('testimonials')}
                 className="text-white hover:text-primary transition-colors text-left"
               >
-                {translations[currentLang].nav.testimonials}
+                {translations[currentLang]?.nav.testimonials}
               </button>
               <button 
                 onClick={() => scrollToSection('contact')}
                 className="text-white hover:text-primary transition-colors text-left"
               >
-                {translations[currentLang].nav.contact}
+                {translations[currentLang]?.nav.contact}
               </button>
               
               {/* Langues Mobile */}
               <div className="pt-4 border-t border-primary/20">
-                <p className="text-white text-sm mb-2">{translations[currentLang].language}:</p>
+                <p className="text-white text-sm mb-2">{translations[currentLang]?.language}:</p>
                 <div className="flex space-x-2">
                   {languages.map((lang) => (
                     <button
@@ -169,7 +171,7 @@ const Header = ({ currentLang, setCurrentLang, translations }) => {
                 className="px-4 py-2 bg-primary hover:bg-primary/90 text-white rounded flex items-center mt-4"
               >
                 <Phone className="w-4 h-4 mr-2" />
-                {translations[currentLang].cta.contact}
+                {translations[currentLang]?.cta.contact}
               </button>
             </nav>
           </div>
