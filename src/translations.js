@@ -28,30 +28,38 @@ export const translations = {
     services: {
       title: "Nos Services",
       subtitle: "Une gamme complète de services de protection adaptés à vos besoins spécifiques",
-      personal: {
-        title: "Protection Personnelle",
-        description: "Agents de sécurité hautement qualifiés pour votre protection rapprochée quotidienne."
-      },
-      event: {
-        title: "Sécurité Événementielle",
-        description: "Sécurisation complète de vos événements privés et professionnels."
-      },
-      executive: {
-        title: "Protection Exécutive",
-        description: "Protection rapprochée pour dirigeants et VIP."
-      },
-      consulting: {
-        title: "Conseil en Sécurité",
-        description: "Évaluation des risques et recommandations personnalisées."
-      },
-      close: {
-        title: "Protection Rapprochée",
-        description: "Sécurité discrète pour personnalités et familles."
-      },
-      management: {
-        title: "Gestion de la Sécurité",
-        description: "Gestion complète de vos dispositifs de sécurité."
-      }
+      list: [
+        {
+          key: "personal",
+          title: "Protection Personnelle",
+          description: "Agents de sécurité hautement qualifiés pour votre protection rapprochée quotidienne."
+        },
+        {
+          key: "event",
+          title: "Sécurité Événementielle",
+          description: "Sécurisation complète de vos événements privés et professionnels."
+        },
+        {
+          key: "executive",
+          title: "Protection Exécutive",
+          description: "Protection rapprochée pour dirigeants et VIP."
+        },
+        {
+          key: "consulting",
+          title: "Conseil en Sécurité",
+          description: "Évaluation des risques et recommandations personnalisées."
+        },
+        {
+          key: "close",
+          title: "Protection Rapprochée",
+          description: "Sécurité discrète pour personnalités et familles."
+        },
+        {
+          key: "management",
+          title: "Gestion de la Sécurité",
+          description: "Gestion complète de vos dispositifs de sécurité."
+        }
+      ]
     },
     about: {
       title: "Pourquoi Choisir LKS Bodyguard ?",
@@ -84,21 +92,23 @@ export const translations = {
     testimonials: {
       title: "Témoignages Clients",
       subtitle: "La confiance de nos clients est notre plus belle récompense",
-      client1: {
-        name: "Maria Rodriguez",
-        role: "Dirigeante d'entreprise",
-        text: "LKS Bodyguard a transformé ma perception de la sécurité. Leur professionnalisme et leur discrétion sont exceptionnels."
-      },
-      client2: {
-        name: "James Wilson",
-        role: "Investisseur",
-        text: "Une équipe remarquable qui allie compétence technique et savoir-vivre. Je recommande sans hésitation."
-      },
-      client3: {
-        name: "Sophie Dubois",
-        role: "Personnalité publique",
-        text: "Grâce à LKS, je peux vaquer à mes occupations en toute sérénité. Leur protection est invisible mais efficace."
-      }
+      list: [
+        {
+          name: "Maria Rodriguez",
+          role: "Dirigeante d'entreprise",
+          text: "LKS Bodyguard a transformé ma perception de la sécurité. Leur professionnalisme et leur discrétion sont exceptionnels."
+        },
+        {
+          name: "James Wilson",
+          role: "Investisseur",
+          text: "Une équipe remarquable qui allie compétence technique et savoir-vivre. Je recommande sans hésitation."
+        },
+        {
+          name: "Sophie Dubois",
+          role: "Personnalité publique",
+          text: "Grâce à LKS, je peux vaquer à mes occupations en toute sérénité. Leur protection est invisible mais efficace."
+        }
+      ]
     },
     contact: {
       title: "Demande de Rendez-vous",
@@ -176,30 +186,38 @@ export const translations = {
     services: {
       title: "Our Services",
       subtitle: "A complete range of protection services tailored to your specific needs",
-      personal: {
-        title: "Personal Protection",
-        description: "Highly qualified security agents for your daily close protection."
-      },
-      event: {
-        title: "Event Security",
-        description: "Complete security for your private and professional events."
-      },
-      executive: {
-        title: "Executive Protection",
-        description: "Close protection for executives and VIPs."
-      },
-      consulting: {
-        title: "Security Consulting",
-        description: "Risk assessment and personalized recommendations."
-      },
-      close: {
-        title: "Close Protection",
-        description: "Discreet security for personalities and families."
-      },
-      management: {
-        title: "Security Management",
-        description: "Comprehensive management of your security systems."
-      }
+      list: [
+        {
+          key: "personal",
+          title: "Personal Protection",
+          description: "Highly qualified security agents for your daily close protection."
+        },
+        {
+          key: "event",
+          title: "Event Security",
+          description: "Complete security for your private and professional events."
+        },
+        {
+          key: "executive",
+          title: "Executive Protection",
+          description: "Close protection for executives and VIPs."
+        },
+        {
+          key: "consulting",
+          title: "Security Consulting",
+          description: "Risk assessment and personalized recommendations."
+        },
+        {
+          key: "close",
+          title: "Close Protection",
+          description: "Discreet security for personalities and families."
+        },
+        {
+          key: "management",
+          title: "Security Management",
+          description: "Comprehensive management of your security systems."
+        }
+      ]
     },
     about: {
       title: "Why Choose LKS Bodyguard?",
@@ -232,21 +250,23 @@ export const translations = {
     testimonials: {
       title: "Client Testimonials",
       subtitle: "Our clients' trust is our greatest reward",
-      client1: {
-        name: "Maria Rodriguez",
-        role: "Business Executive",
-        text: "LKS Bodyguard has transformed my perception of security. Their professionalism and discretion are exceptional."
-      },
-      client2: {
-        name: "James Wilson",
-        role: "Investor",
-        text: "A remarkable team that combines technical competence and savoir-vivre. I recommend without hesitation."
-      },
-      client3: {
-        name: "Sophie Dubois",
-        role: "Public Figure",
-        text: "Thanks to LKS, I can go about my business with complete peace of mind. Their protection is invisible but effective."
-      }
+      list: [
+        {
+          name: "Maria Rodriguez",
+          role: "Business Executive",
+          text: "LKS Bodyguard has transformed my perception of security. Their professionalism and discretion are exceptional."
+        },
+        {
+          name: "James Wilson",
+          role: "Investor",
+          text: "A remarkable team that combines technical competence and savoir-vivre. I recommend without hesitation."
+        },
+        {
+          name: "Sophie Dubois",
+          role: "Public Figure",
+          text: "Thanks to LKS, I can go about my business with complete peace of mind. Their protection is invisible but effective."
+        }
+      ]
     },
     contact: {
       title: "Request an Appointment",
@@ -324,30 +344,38 @@ export const translations = {
     services: {
       title: "Sèvis Nou Yo",
       subtitle: "Yon seri konplè sèvis pwoteksyon ki adapte ak bezwen espesifik ou yo",
-      personal: {
-        title: "Pwoteksyon Pèsonèl",
-        description: "Ajan sekirite ki gen bon kalifikasyon pou pwoteksyon ou chak jou."
-      },
-      event: {
-        title: "Sekirite Aktivite",
-        description: "Sekirite konplè pou aktivite prive ak pwofesyonèl ou yo."
-      },
-      executive: {
-        title: "Pwoteksyon Egzekitif",
-        description: "Pwoteksyon pèsonèl pou dirijan ak VIP."
-      },
-      consulting: {
-        title: "Konsèy Sekirite",
-        description: "Evalyasyon risk ak rekòmandasyon pèsonalize."
-      },
-      close: {
-        title: "Pwoteksyon Rapprochée",
-        description: "Sekirite diskre pou pèsonalite ak fanmi."
-      },
-      management: {
-        title: "Jesyon Sekirite",
-        description: "Jesyon konplè sistèm sekirite ou yo."
-      }
+      list: [
+        {
+          key: "personal",
+          title: "Pwoteksyon Pèsonèl",
+          description: "Ajan sekirite ki gen bon kalifikasyon pou pwoteksyon ou chak jou."
+        },
+        {
+          key: "event",
+          title: "Sekirite Aktivite",
+          description: "Sekirite konplè pou aktivite prive ak pwofesyonèl ou yo."
+        },
+        {
+          key: "executive",
+          title: "Pwoteksyon Egzekitif",
+          description: "Pwoteksyon pèsonèl pou dirijan ak VIP."
+        },
+        {
+          key: "consulting",
+          title: "Konsèy Sekirite",
+          description: "Evalyasyon risk ak rekòmandasyon pèsonalize."
+        },
+        {
+          key: "close",
+          title: "Pwoteksyon Rapprochée",
+          description: "Sekirite diskre pou pèsonalite ak fanmi."
+        },
+        {
+          key: "management",
+          title: "Jesyon Sekirite",
+          description: "Jesyon konplè sistèm sekirite ou yo."
+        }
+      ]
     },
     about: {
       title: "Poukisa Chwazi LKS Bodyguard?",
@@ -380,21 +408,23 @@ export const translations = {
     testimonials: {
       title: "Temwayaj Kliyan",
       subtitle: "Konfyans kliyan nou yo se pi bèl rekonpans nou an",
-      client1: {
-        name: "Maria Rodriguez",
-        role: "Direktè Biznis",
-        text: "LKS Bodyguard chanje fason mwen wè sekirite a. Pwofesyonalis ak diskreyon yo eksepsyonèl."
-      },
-      client2: {
-        name: "James Wilson",
-        role: "Envestisè",
-        text: "Yon ekip remakab ki konbine konpetans teknik ak bon jan edikasyon. Mwen rekòmande san ezitasyon."
-      },
-      client3: {
-        name: "Sophie Dubois",
-        role: "Pèsonalite Piblik",
-        text: "Gras ak LKS, mwen ka fè travay mwen ak kè poze konplètman. Pwoteksyon yo pa wè men li efikas."
-      }
+      list: [
+        {
+          name: "Maria Rodriguez",
+          role: "Direktè Biznis",
+          text: "LKS Bodyguard chanje fason mwen wè sekirite a. Pwofesyonalis ak diskreyon yo eksepsyonèl."
+        },
+        {
+          name: "James Wilson",
+          role: "Envestisè",
+          text: "Yon ekip remakab ki konbine konpetans teknik ak bon jan edikasyon. Mwen rekòmande san ezitasyon."
+        },
+        {
+          name: "Sophie Dubois",
+          role: "Pèsonalite Piblik",
+          text: "Gras ak LKS, mwen ka fè travay mwen ak kè poze konplètman. Pwoteksyon yo pa wè men li efikas."
+        }
+      ]
     },
     contact: {
       title: "Mande Randevou",
@@ -472,30 +502,38 @@ export const translations = {
     services: {
       title: "Nuestros Servicios",
       subtitle: "Una gama completa de servicios de protección adaptados a sus necesidades específicas",
-      personal: {
-        title: "Protección Personal",
-        description: "Agentes de seguridad altamente calificados para su protección diaria."
-      },
-      event: {
-        title: "Seguridad para Eventos",
-        description: "Seguridad integral para sus eventos privados y profesionales."
-      },
-      executive: {
-        title: "Protección Ejecutiva",
-        description: "Protección cercana para ejecutivos y VIPs."
-      },
-      consulting: {
-        title: "Consultoría en Seguridad",
-        description: "Evaluación de riesgos y recomendaciones personalizadas."
-      },
-      close: {
-        title: "Protección Cercana",
-        description: "Seguridad discreta para personalidades y familias."
-      },
-      management: {
-        title: "Gestión de Seguridad",
-        description: "Gestión integral de sus sistemas de seguridad."
-      }
+      list: [
+        {
+          key: "personal",
+          title: "Protección Personal",
+          description: "Agentes de seguridad altamente calificados para su protección diaria."
+        },
+        {
+          key: "event",
+          title: "Seguridad para Eventos",
+          description: "Seguridad integral para sus eventos privados y profesionales."
+        },
+        {
+          key: "executive",
+          title: "Protección Ejecutiva",
+          description: "Protección cercana para ejecutivos y VIPs."
+        },
+        {
+          key: "consulting",
+          title: "Consultoría en Seguridad",
+          description: "Evaluación de riesgos y recomendaciones personalizadas."
+        },
+        {
+          key: "close",
+          title: "Protección Cercana",
+          description: "Seguridad discreta para personalidades y familias."
+        },
+        {
+          key: "management",
+          title: "Gestión de Seguridad",
+          description: "Gestión integral de sus sistemas de seguridad."
+        }
+      ]
     },
     about: {
       title: "¿Por qué elegir LKS Bodyguard?",
@@ -528,21 +566,23 @@ export const translations = {
     testimonials: {
       title: "Testimonios de Clientes",
       subtitle: "La confianza de nuestros clientes es nuestra mayor recompensa",
-      client1: {
-        name: "Maria Rodriguez",
-        role: "Directora de empresa",
-        text: "LKS Bodyguard ha transformado mi percepción de la seguridad. Su profesionalismo y discreción son excepcionales."
-      },
-      client2: {
-        name: "James Wilson",
-        role: "Inversor",
-        text: "Un equipo notable que combina competencia técnica y saber estar. Lo recomiendo sin dudar."
-      },
-      client3: {
-        name: "Sophie Dubois",
-        role: "Figura Pública",
-        text: "Gracias a LKS, puedo ocuparme de mis asuntos con total tranquilidad. Su protección es invisible pero eficaz."
-      }
+      list: [
+        {
+          name: "Maria Rodriguez",
+          role: "Directora de empresa",
+          text: "LKS Bodyguard ha transformado mi percepción de la seguridad. Su profesionalismo y discreción son excepcionales."
+        },
+        {
+          name: "James Wilson",
+          role: "Inversor",
+          text: "Un equipo notable que combina competencia técnica y saber estar. Lo recomiendo sin dudar."
+        },
+        {
+          name: "Sophie Dubois",
+          role: "Figura Pública",
+          text: "Gracias a LKS, puedo ocuparme de mis asuntos con total tranquilidad. Su protección es invisible pero eficaz."
+        }
+      ]
     },
     contact: {
       title: "Solicite una Cita",
