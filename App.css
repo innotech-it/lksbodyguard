@@ -1,0 +1,205 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+}
+
+:root {
+  --radius: 0.625rem;
+  --background: oklch(1 0 0); /* Blanc */
+  --foreground: oklch(0.1 0 0); /* Noir */
+  --card: oklch(1 0 0); /* Blanc */
+  --card-foreground: oklch(0.1 0 0); /* Noir */
+  --popover: oklch(1 0 0); /* Blanc */
+  --popover-foreground: oklch(0.1 0 0); /* Noir */
+  --primary: oklch(0.45 0.15 15); /* Rouge LKS */
+  --primary-foreground: oklch(1 0 0); /* Blanc */
+  --secondary: oklch(0.95 0 0); /* Gris très clair */
+  --secondary-foreground: oklch(0.1 0 0); /* Noir */
+  --muted: oklch(0.95 0 0); /* Gris très clair */
+  --muted-foreground: oklch(0.4 0 0); /* Gris foncé */
+  --accent: oklch(0.45 0.15 15); /* Rouge LKS */
+  --accent-foreground: oklch(1 0 0); /* Blanc */
+  --destructive: oklch(0.577 0.245 27.325);
+  --border: oklch(0.9 0 0); /* Gris clair */
+  --input: oklch(0.98 0 0); /* Blanc cassé */
+  --ring: oklch(0.45 0.15 15); /* Rouge LKS */
+  --chart-1: oklch(0.45 0.15 15); /* Rouge LKS */
+  --chart-2: oklch(0.1 0 0); /* Noir */
+  --chart-3: oklch(0.6 0 0); /* Gris */
+  --chart-4: oklch(0.8 0 0); /* Gris clair */
+  --chart-5: oklch(0.3 0 0); /* Gris foncé */
+  --sidebar: oklch(0.1 0 0); /* Noir */
+  --sidebar-foreground: oklch(1 0 0); /* Blanc */
+  --sidebar-primary: oklch(0.45 0.15 15); /* Rouge LKS */
+  --sidebar-primary-foreground: oklch(1 0 0); /* Blanc */
+  --sidebar-accent: oklch(0.2 0 0); /* Gris très foncé */
+  --sidebar-accent-foreground: oklch(1 0 0); /* Blanc */
+  --sidebar-border: oklch(0.3 0 0); /* Gris foncé */
+  --sidebar-ring: oklch(0.45 0.15 15); /* Rouge LKS */
+}
+
+.dark {
+  --background: oklch(0.1 0 0); /* Noir */
+  --foreground: oklch(1 0 0); /* Blanc */
+  --card: oklch(0.15 0 0); /* Noir légèrement plus clair */
+  --card-foreground: oklch(1 0 0); /* Blanc */
+  --popover: oklch(0.15 0 0); /* Noir légèrement plus clair */
+  --popover-foreground: oklch(1 0 0); /* Blanc */
+  --primary: oklch(0.55 0.15 15); /* Rouge LKS plus clair */
+  --primary-foreground: oklch(1 0 0); /* Blanc */
+  --secondary: oklch(0.2 0 0); /* Gris très foncé */
+  --secondary-foreground: oklch(1 0 0); /* Blanc */
+  --muted: oklch(0.2 0 0); /* Gris très foncé */
+  --muted-foreground: oklch(0.7 0 0); /* Gris clair */
+  --accent: oklch(0.55 0.15 15); /* Rouge LKS plus clair */
+  --accent-foreground: oklch(1 0 0); /* Blanc */
+  --destructive: oklch(0.704 0.191 22.216);
+  --border: oklch(0.3 0 0); /* Gris foncé */
+  --input: oklch(0.2 0 0); /* Gris très foncé */
+  --ring: oklch(0.55 0.15 15); /* Rouge LKS plus clair */
+  --chart-1: oklch(0.55 0.15 15); /* Rouge LKS plus clair */
+  --chart-2: oklch(1 0 0); /* Blanc */
+  --chart-3: oklch(0.6 0 0); /* Gris */
+  --chart-4: oklch(0.4 0 0); /* Gris foncé */
+  --chart-5: oklch(0.8 0 0); /* Gris clair */
+  --sidebar: oklch(0.1 0 0); /* Noir */
+  --sidebar-foreground: oklch(1 0 0); /* Blanc */
+  --sidebar-primary: oklch(0.55 0.15 15); /* Rouge LKS plus clair */
+  --sidebar-primary-foreground: oklch(1 0 0); /* Blanc */
+  --sidebar-accent: oklch(0.2 0 0); /* Gris très foncé */
+  --sidebar-accent-foreground: oklch(1 0 0); /* Blanc */
+  --sidebar-border: oklch(0.3 0 0); /* Gris foncé */
+  --sidebar-ring: oklch(0.55 0.15 15); /* Rouge LKS plus clair */
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+
+/* Styles personnalisés pour LKS Bodyguard */
+.hero-gradient {
+  background: linear-gradient(135deg, rgba(0,0,0,0.8) 0%, rgba(139,69,19,0.6) 100%);
+}
+
+.text-gradient {
+  background: linear-gradient(135deg, #8B4513 0%, #A0522D 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.luxury-shadow {
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25), 0 0 0 1px rgba(139, 69, 19, 0.1);
+}
+
+.hover-lift {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hover-lift:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 35px 60px -12px rgba(0, 0, 0, 0.3);
+}
+
+.parallax-bg {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media (max-width: 768px) {
+  .parallax-bg {
+    background-attachment: scroll;
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-slide-in-left {
+  animation: slideInLeft 0.8s ease-out;
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.animate-slide-in-right {
+  animation: slideInRight 0.8s ease-out;
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
