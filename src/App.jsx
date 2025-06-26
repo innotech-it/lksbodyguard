@@ -9,8 +9,16 @@ import Contact from './components/Contact';
 import Footer from './components/Footer';
 import { translations } from './translations';
 
+function getDefaultLang() {
+  const lang = navigator.language || navigator.userLanguage;
+  if (lang.startsWith('fr')) return 'fr';
+  if (lang.startsWith('ht')) return 'ht';
+  // Par défaut, anglais
+  return 'en';
+}
+
 function App() {
-  const [currentLang, setCurrentLang] = useState('fr');
+  const [currentLang, setCurrentLang] = useState(getDefaultLang());
 
   return (
     <div className="App">
@@ -48,4 +56,3 @@ function App() {
 }
 
 export default App;
-
