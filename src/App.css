@@ -1,5 +1,6 @@
 @import "tailwindcss";
-@import "tw-animate-css";
+
+/* @import "tw-animate-css";  <-- supprimé car ce module n'existe pas */
 
 @custom-variant dark (&:is(.dark *));
 
@@ -119,7 +120,6 @@
   }
 }
 
-
 /* Styles personnalisés pour LKS Bodyguard */
 .hero-gradient {
   background: linear-gradient(135deg, rgba(0,0,0,0.8) 0%, rgba(139,69,19,0.6) 100%);
@@ -202,4 +202,3 @@
     transform: translateX(0);
   }
 }
-
