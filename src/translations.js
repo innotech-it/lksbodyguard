@@ -89,27 +89,27 @@ export const translations = {
       appointment: "Prendre Rendez-vous",
       discover: "Découvrir nos Services"
     },
-    testimonials: {
-      title: "Témoignages Clients",
-      subtitle: "La confiance de nos clients est notre plus belle récompense",
-      list: [
-        {
-          name: "Maria Rodriguez",
-          role: "Dirigeante d'entreprise",
-          text: "LKS Bodyguard a transformé ma perception de la sécurité. Leur professionnalisme et leur discrétion sont exceptionnels."
-        },
-        {
-          name: "James Wilson",
-          role: "Investisseur",
-          text: "Une équipe remarquable qui allie compétence technique et savoir-vivre. Je recommande sans hésitation."
-        },
-        {
-          name: "Sophie Dubois",
-          role: "Personnalité publique",
-          text: "Grâce à LKS, je peux vaquer à mes occupations en toute sérénité. Leur protection est invisible mais efficace."
-        }
-      ]
+testimonials: {
+  title: "Témoignages Clients",
+  subtitle: "La confiance de nos clients est notre plus belle récompense",
+  list: [
+    {
+      name: "Maria Rodriguez",
+      role: "Dirigeante d'entreprise",
+      text: "LKS Bodyguard a transformé ma perception de la sécurité. Leur professionnalisme et leur discrétion sont exceptionnels."
     },
+    {
+      name: "James Wilson",
+      role: "Investisseur",
+      text: "Une équipe remarquable qui allie compétence technique et savoir-vivre. Je recommande sans hésitation."
+    },
+    {
+      name: "Sophie Dubois",
+      role: "Personnalité publique",
+      text: "Grâce à LKS, je peux vaquer à mes occupations en toute sérénité. Leur protection est invisible mais efficace."
+    }
+  ]
+},
     contact: {
       title: "Demande de Rendez-vous",
       subtitle: "Contactez-nous pour une consultation personnalisée et confidentielle",
@@ -248,26 +248,26 @@ export const translations = {
       discover: "Discover our Services"
     },
     testimonials: {
-      title: "Client Testimonials",
-      subtitle: "Our clients' trust is our greatest reward",
-      list: [
-        {
-          name: "Maria Rodriguez",
-          role: "Business Executive",
-          text: "LKS Bodyguard has transformed my perception of security. Their professionalism and discretion are exceptional."
-        },
-        {
-          name: "James Wilson",
-          role: "Investor",
-          text: "A remarkable team that combines technical competence and savoir-vivre. I recommend without hesitation."
-        },
-        {
-          name: "Sophie Dubois",
-          role: "Public Figure",
-          text: "Thanks to LKS, I can go about my business with complete peace of mind. Their protection is invisible but effective."
-        }
-      ]
+  title: "Client Testimonials",
+  subtitle: "Our clients' trust is our greatest reward",
+  list: [
+    {
+      name: "Maria Rodriguez",
+      role: "Business Executive",
+      text: "LKS Bodyguard has transformed my perception of security. Their professionalism and discretion are exceptional."
     },
+    {
+      name: "James Wilson",
+      role: "Investor",
+      text: "A remarkable team that combines technical competence and savoir-vivre. I recommend without hesitation."
+    },
+    {
+      name: "Sophie Dubois",
+      role: "Public Figure",
+      text: "Thanks to LKS, I can go about my business with complete peace of mind. Their protection is invisible but effective."
+    }
+  ]
+},
     contact: {
       title: "Request an Appointment",
       subtitle: "Contact us for a personalized and confidential consultation",
@@ -405,27 +405,27 @@ export const translations = {
       appointment: "Pran Randevou",
       discover: "Dekouvri Sèvis Nou Yo"
     },
-    testimonials: {
-      title: "Temwayaj Kliyan",
-      subtitle: "Konfyans kliyan nou yo se pi bèl rekonpans nou an",
-      list: [
-        {
-          name: "Maria Rodriguez",
-          role: "Direktè Biznis",
-          text: "LKS Bodyguard chanje fason mwen wè sekirite a. Pwofesyonalis ak diskreyon yo eksepsyonèl."
-        },
-        {
-          name: "James Wilson",
-          role: "Envestisè",
-          text: "Yon ekip remakab ki konbine konpetans teknik ak bon jan edikasyon. Mwen rekòmande san ezitasyon."
-        },
-        {
-          name: "Sophie Dubois",
-          role: "Pèsonalite Piblik",
-          text: "Gras ak LKS, mwen ka fè travay mwen ak kè poze konplètman. Pwoteksyon yo pa wè men li efikas."
-        }
-      ]
+testimonials: {
+  title: "Temwayaj Kliyan",
+  subtitle: "Konfyans kliyan nou yo se pi bèl rekonpans nou an",
+  list: [
+    {
+      name: "Maria Rodriguez",
+      role: "Direktè Biznis",
+      text: "LKS Bodyguard chanje fason mwen wè sekirite a. Pwofesyonalis ak diskreyon yo eksepsyonèl."
     },
+    {
+      name: "James Wilson",
+      role: "Envestisè",
+      text: "Yon ekip remakab ki konbine konpetans teknik ak bon jan edikasyon. Mwen rekòmande san ezitasyon."
+    },
+    {
+      name: "Sophie Dubois",
+      role: "Pèsonalite Piblik",
+      text: "Gras ak LKS, mwen ka fè travay mwen ak kè poze konplètman. Pwoteksyon yo pa wè men li efikas."
+    }
+  ]
+},
     contact: {
       title: "Mande Randevou",
       subtitle: "Kontakte nou pou yon konsiltasyon pèsonalize ak konfidansyèl",
@@ -563,27 +563,27 @@ export const translations = {
       appointment: "Solicitar Cita",
       discover: "Descubra nuestros Servicios"
     },
-    testimonials: {
-      title: "Testimonios de Clientes",
-      subtitle: "La confianza de nuestros clientes es nuestra mayor recompensa",
-      list: [
-        {
-          name: "Maria Rodriguez",
-          role: "Directora de empresa",
-          text: "LKS Bodyguard ha transformado mi percepción de la seguridad. Su profesionalismo y discreción son excepcionales."
-        },
-        {
-          name: "James Wilson",
-          role: "Inversor",
-          text: "Un equipo notable que combina competencia técnica y saber estar. Lo recomiendo sin dudar."
-        },
-        {
-          name: "Sophie Dubois",
-          role: "Figura Pública",
-          text: "Gracias a LKS, puedo ocuparme de mis asuntos con total tranquilidad. Su protección es invisible pero eficaz."
-        }
-      ]
+testimonials: {
+  title: "Testimonios de Clientes",
+  subtitle: "La confianza de nuestros clientes es nuestra mayor recompensa",
+  list: [
+    {
+      name: "Maria Rodriguez",
+      role: "Directora de empresa",
+      text: "LKS Bodyguard ha transformado mi percepción de la seguridad. Su profesionalismo y discreción son excepcionales."
     },
+    {
+      name: "James Wilson",
+      role: "Inversor",
+      text: "Un equipo notable que combina competencia técnica y saber estar. Lo recomiendo sin dudar."
+    },
+    {
+      name: "Sophie Dubois",
+      role: "Figura Pública",
+      text: "Gracias a LKS, puedo ocuparme de mis asuntos con total tranquilidad. Su protección es invisible pero eficaz."
+    }
+  ]
+},
     contact: {
       title: "Solicite una Cita",
       subtitle: "Contáctenos para una consulta personalizada y confidencial",
