@@ -10,9 +10,10 @@ import Footer from './components/Footer';
 import { translations } from './translations';
 
 function getDefaultLang() {
-  const lang = navigator.language || navigator.userLanguage;
+  const lang = navigator.language || navigator.userLanguage || 'en';
   if (lang.startsWith('fr')) return 'fr';
   if (lang.startsWith('ht')) return 'ht';
+  if (lang.startsWith('es')) return 'es';
   // Par défaut, anglais
   return 'en';
 }
