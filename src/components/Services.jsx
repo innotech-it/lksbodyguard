@@ -1,5 +1,4 @@
 import React from 'react';
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from './ui/card';
 import { Shield, Users, Car, Home, Plane, FileText } from 'lucide-react';
 
 const Services = ({ currentLang, translations }) => {
@@ -52,25 +51,21 @@ const Services = ({ currentLang, translations }) => {
           {services.map((service, index) => {
             const Icon = service.icon;
             return (
-              <Card 
-                key={service.key} 
-                className="luxury-shadow hover-lift bg-white border-0 overflow-hidden group"
+              <div
+                key={service.key}
+                className="luxury-shadow hover-lift bg-white border-0 overflow-hidden group rounded-2xl p-6 flex flex-col items-center"
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
-                <CardHeader className="text-center pb-4">
-                  <div className="w-16 h-16 mx-auto mb-4 bg-primary/10 rounded-full flex items-center justify-center group-hover:bg-primary/20 transition-colors duration-300">
-                    <Icon className={`w-8 h-8 ${service.color}`} />
-                  </div>
-                  <CardTitle className="text-xl font-bold text-gray-900">
-                    {translations[currentLang].services[service.key].title}
-                  </CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <CardDescription className="text-gray-600 text-center leading-relaxed">
-                    {translations[currentLang].services[service.key].description}
-                  </CardDescription>
-                </CardContent>
-              </Card>
+                <div className="w-16 h-16 mx-auto mb-4 bg-primary/10 rounded-full flex items-center justify-center group-hover:bg-primary/20 transition-colors duration-300">
+                  <Icon className={`w-8 h-8 ${service.color}`} />
+                </div>
+                <div className="text-xl font-bold text-gray-900 text-center mb-2">
+                  {translations[currentLang].services[service.key].title}
+                </div>
+                <div className="text-gray-600 text-center leading-relaxed">
+                  {translations[currentLang].services[service.key].description}
+                </div>
+              </div>
             );
           })}
         </div>
@@ -98,4 +93,3 @@ const Services = ({ currentLang, translations }) => {
 };
 
 export default Services;
-
