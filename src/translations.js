@@ -1,184 +1,478 @@
-import React, { useState } from 'react';
-import { Menu, X, Phone, Globe } from 'lucide-react';
-import logo from '../assets/logo.png';
-
-const Header = ({ currentLang, setCurrentLang, translations }) => {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
-
-  const languages = [
-    { code: 'fr', name: 'Français', flag: '🇫🇷' },
-    { code: 'en', name: 'English', flag: '🇺🇸' },
-    { code: 'ht', name: 'Kreyòl', flag: '🇭🇹' },
-    { code: 'es', name: 'Español', flag: '🇪🇸' }
-  ];
-
-  const scrollToSection = (sectionId) => {
-    const element = document.getElementById(sectionId);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
+export const translations = {
+  fr: {
+    tagline: "Sécurité Privée",
+    language: "Langue",
+    nav: {
+      home: "Accueil",
+      services: "Services",
+      about: "À Propos",
+      testimonials: "Témoignages",
+      contact: "Contact"
+    },
+    hero: {
+      badge: "Protection Rapprochée de Prestige",
+      title: "BODYGUARD",
+      subtitle: "Protection rapprochée discrète et professionnelle pour une clientèle d'exception à Miami. Votre sécurité est notre priorité absolue.",
+      stats: {
+        experience: "Années d'Expérience",
+        clients: "Clients Protégés",
+        availability: "Disponibilité"
+      }
+    },
+    services: {
+      title: "Nos Services",
+      subtitle: "Une gamme complète de services de protection adaptés à vos besoins spécifiques",
+      personal: {
+        title: "Protection Personnelle",
+        description: "Agents de sécurité hautement qualifiés pour votre protection rapprochée quotidienne."
+      },
+      event: {
+        title: "Sécurité Événementielle",
+        description: "Sécurisation complète de vos événements privés et professionnels."
+      },
+      transport: {
+        title: "Transport Sécurisé",
+        description: "Véhicules blindés et chauffeurs professionnels pour vos déplacements."
+      },
+      residence: {
+        title: "Sécurité Résidentielle",
+        description: "Protection de votre domicile et surveillance 24h/24."
+      },
+      travel: {
+        title: "Accompagnement Voyage",
+        description: "Protection lors de vos déplacements nationaux et internationaux."
+      },
+      consulting: {
+        title: "Conseil en Sécurité",
+        description: "Évaluation des risques et recommandations personnalisées."
+      }
+    },
+    about: {
+      title: "Pourquoi Choisir LKS Bodyguard ?",
+      subtitle: "L'excellence au service de votre sécurité",
+      experience: {
+        title: "Expertise Reconnue",
+        description: "Plus de 15 ans d'expérience dans la protection rapprochée de personnalités de haut niveau."
+      },
+      discretion: {
+        title: "Discrétion Absolue",
+        description: "Nos agents opèrent avec la plus grande discrétion pour préserver votre intimité."
+      },
+      availability: {
+        title: "Disponibilité 24/7",
+        description: "Une équipe disponible en permanence pour répondre à tous vos besoins de sécurité."
+      },
+      technology: {
+        title: "Technologies Avancées",
+        description: "Équipements de pointe et systèmes de communication sécurisés."
+      }
+    },
+    testimonials: {
+      title: "Témoignages Clients",
+      subtitle: "La confiance de nos clients est notre plus belle récompense",
+      client1: {
+        name: "Maria Rodriguez",
+        role: "Dirigeante d'entreprise",
+        text: "LKS Bodyguard a transformé ma perception de la sécurité. Leur professionnalisme et leur discrétion sont exceptionnels."
+      },
+      client2: {
+        name: "James Wilson",
+        role: "Investisseur",
+        text: "Une équipe remarquable qui allie compétence technique et savoir-vivre. Je recommande sans hésitation."
+      },
+      client3: {
+        name: "Sophie Dubois",
+        role: "Personnalité publique",
+        text: "Grâce à LKS, je peux vaquer à mes occupations en toute sérénité. Leur protection est invisible mais efficace."
+      }
+    },
+    contact: {
+      title: "Prenez Rendez-vous",
+      subtitle: "Contactez-nous pour une consultation personnalisée et confidentielle",
+      form: {
+        name: "Nom complet",
+        email: "Adresse email",
+        phone: "Numéro de téléphone",
+        service: "Service souhaité",
+        message: "Message",
+        submit: "Demander un Rendez-vous"
+      },
+      info: {
+        address: "Miami, Floride, États-Unis",
+        phone: "+1 (305) 123-4567",
+        email: "contact@lksbodyguard.com"
+      }
+    },
+    cta: {
+      contact: "Nous Contacter",
+      appointment: "Prendre Rendez-vous",
+      discover: "Découvrir nos Services"
+    },
+    footer: {
+      description: "LKS Bodyguard - Votre partenaire de confiance pour une protection rapprochée d'exception à Miami.",
+      links: {
+        privacy: "Politique de Confidentialité",
+        terms: "Conditions d'Utilisation",
+        legal: "Mentions Légales"
+      },
+      rights: "Tous droits réservés."
     }
-    setIsMenuOpen(false);
-  };
-
-  return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-black/90 backdrop-blur-md border-b border-primary/20">
-      <div className="container mx-auto px-4 py-4">
-        <div className="flex items-center justify-between">
-          {/* Logo */}
-          <div className="flex items-center space-x-3">
-            <img src={logo} alt="LKS Bodyguard" className="h-12 w-12" />
-            <div>
-              <h1 className="text-xl font-bold text-white">LKS Bodyguard</h1>
-              <p className="text-sm text-primary">
-                {translations[currentLang]?.tagline}
-              </p>
-            </div>
-          </div>
-
-          {/* Navigation Desktop */}
-          <nav className="hidden md:flex items-center space-x-8">
-            <button 
-              onClick={() => scrollToSection('home')}
-              className="text-white hover:text-primary transition-colors"
-            >
-              {translations[currentLang]?.nav.home}
-            </button>
-            <button 
-              onClick={() => scrollToSection('services')}
-              className="text-white hover:text-primary transition-colors"
-            >
-              {translations[currentLang]?.nav.services}
-            </button>
-            <button 
-              onClick={() => scrollToSection('about')}
-              className="text-white hover:text-primary transition-colors"
-            >
-              {translations[currentLang]?.nav.about}
-            </button>
-            <button 
-              onClick={() => scrollToSection('testimonials')}
-              className="text-white hover:text-primary transition-colors"
-            >
-              {translations[currentLang]?.nav.testimonials}
-            </button>
-            <button 
-              onClick={() => scrollToSection('contact')}
-              className="text-white hover:text-primary transition-colors"
-            >
-              {translations[currentLang]?.nav.contact}
-            </button>
-          </nav>
-
-          {/* Actions Desktop */}
-          <div className="hidden md:flex items-center space-x-4">
-            {/* Sélecteur de langue */}
-            <div className="relative group">
-              <button
-                type="button"
-                className="px-3 py-1 border border-primary rounded bg-transparent text-white hover:bg-primary flex items-center"
-              >
-                <Globe className="w-4 h-4 mr-2" />
-                {languages.find(lang => lang.code === currentLang)?.flag}
-              </button>
-              <div className="absolute top-full right-0 mt-2 bg-black border border-primary rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
-                {languages.map((lang) => (
-                  <button
-                    key={lang.code}
-                    onClick={() => setCurrentLang(lang.code)}
-                    className="block w-full px-4 py-2 text-left text-white hover:bg-primary/20 first:rounded-t-md last:rounded-b-md"
-                  >
-                    {lang.flag} {lang.name}
-                  </button>
-                ))}
-              </div>
-            </div>
-
-            <button 
-              onClick={() => scrollToSection('contact')}
-              className="px-4 py-2 bg-primary hover:bg-primary/90 text-white rounded flex items-center"
-            >
-              <Phone className="w-4 h-4 mr-2" />
-              {translations[currentLang]?.cta.contact}
-            </button>
-          </div>
-
-          {/* Menu Mobile */}
-          <button
-            className="md:hidden text-white"
-            onClick={() => setIsMenuOpen(!isMenuOpen)}
-          >
-            {isMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
-          </button>
-        </div>
-
-        {/* Menu Mobile Ouvert */}
-        {isMenuOpen && (
-          <div className="md:hidden mt-4 pb-4 border-t border-primary/20">
-            <nav className="flex flex-col space-y-4 mt-4">
-              <button 
-                onClick={() => scrollToSection('home')}
-                className="text-white hover:text-primary transition-colors text-left"
-              >
-                {translations[currentLang]?.nav.home}
-              </button>
-              <button 
-                onClick={() => scrollToSection('services')}
-                className="text-white hover:text-primary transition-colors text-left"
-              >
-                {translations[currentLang]?.nav.services}
-              </button>
-              <button 
-                onClick={() => scrollToSection('about')}
-                className="text-white hover:text-primary transition-colors text-left"
-              >
-                {translations[currentLang]?.nav.about}
-              </button>
-              <button 
-                onClick={() => scrollToSection('testimonials')}
-                className="text-white hover:text-primary transition-colors text-left"
-              >
-                {translations[currentLang]?.nav.testimonials}
-              </button>
-              <button 
-                onClick={() => scrollToSection('contact')}
-                className="text-white hover:text-primary transition-colors text-left"
-              >
-                {translations[currentLang]?.nav.contact}
-              </button>
-              
-              {/* Langues Mobile */}
-              <div className="pt-4 border-t border-primary/20">
-                <p className="text-white text-sm mb-2">{translations[currentLang]?.language}:</p>
-                <div className="flex space-x-2">
-                  {languages.map((lang) => (
-                    <button
-                      key={lang.code}
-                      onClick={() => setCurrentLang(lang.code)}
-                      className={`px-3 py-1 rounded text-sm ${
-                        currentLang === lang.code 
-                          ? 'bg-primary text-white' 
-                          : 'bg-transparent border border-primary text-white hover:bg-primary/20'
-                      }`}
-                    >
-                      {lang.flag} {lang.name}
-                    </button>
-                  ))}
-                </div>
-              </div>
-
-              <button 
-                onClick={() => scrollToSection('contact')}
-                className="px-4 py-2 bg-primary hover:bg-primary/90 text-white rounded flex items-center mt-4"
-              >
-                <Phone className="w-4 h-4 mr-2" />
-                {translations[currentLang]?.cta.contact}
-              </button>
-            </nav>
-          </div>
-        )}
-      </div>
-    </header>
-  );
+  },
+  en: {
+    tagline: "Private Security",
+    language: "Language",
+    nav: {
+      home: "Home",
+      services: "Services",
+      about: "About",
+      testimonials: "Testimonials",
+      contact: "Contact"
+    },
+    hero: {
+      badge: "Prestigious Close Protection",
+      title: "BODYGUARD",
+      subtitle: "Discreet and professional close protection for exceptional clientele in Miami. Your security is our absolute priority.",
+      stats: {
+        experience: "Years of Experience",
+        clients: "Protected Clients",
+        availability: "Availability"
+      }
+    },
+    services: {
+      title: "Our Services",
+      subtitle: "A complete range of protection services tailored to your specific needs",
+      personal: {
+        title: "Personal Protection",
+        description: "Highly qualified security agents for your daily close protection."
+      },
+      event: {
+        title: "Event Security",
+        description: "Complete security for your private and professional events."
+      },
+      transport: {
+        title: "Secure Transport",
+        description: "Armored vehicles and professional drivers for your travels."
+      },
+      residence: {
+        title: "Residential Security",
+        description: "Home protection and 24/7 surveillance."
+      },
+      travel: {
+        title: "Travel Escort",
+        description: "Protection during your domestic and international travels."
+      },
+      consulting: {
+        title: "Security Consulting",
+        description: "Risk assessment and personalized recommendations."
+      }
+    },
+    about: {
+      title: "Why Choose LKS Bodyguard?",
+      subtitle: "Excellence in service of your security",
+      experience: {
+        title: "Recognized Expertise",
+        description: "Over 15 years of experience in close protection of high-level personalities."
+      },
+      discretion: {
+        title: "Absolute Discretion",
+        description: "Our agents operate with the utmost discretion to preserve your privacy."
+      },
+      availability: {
+        title: "24/7 Availability",
+        description: "A team available at all times to meet all your security needs."
+      },
+      technology: {
+        title: "Advanced Technologies",
+        description: "State-of-the-art equipment and secure communication systems."
+      }
+    },
+    testimonials: {
+      title: "Client Testimonials",
+      subtitle: "Our clients' trust is our greatest reward",
+      client1: {
+        name: "Maria Rodriguez",
+        role: "Business Executive",
+        text: "LKS Bodyguard has transformed my perception of security. Their professionalism and discretion are exceptional."
+      },
+      client2: {
+        name: "James Wilson",
+        role: "Investor",
+        text: "A remarkable team that combines technical competence and savoir-vivre. I recommend without hesitation."
+      },
+      client3: {
+        name: "Sophie Dubois",
+        role: "Public Figure",
+        text: "Thanks to LKS, I can go about my business with complete peace of mind. Their protection is invisible but effective."
+      }
+    },
+    contact: {
+      title: "Schedule an Appointment",
+      subtitle: "Contact us for a personalized and confidential consultation",
+      form: {
+        name: "Full name",
+        email: "Email address",
+        phone: "Phone number",
+        service: "Desired service",
+        message: "Message",
+        submit: "Request an Appointment"
+      },
+      info: {
+        address: "Miami, Florida, United States",
+        phone: "+1 (305) 123-4567",
+        email: "contact@lksbodyguard.com"
+      }
+    },
+    cta: {
+      contact: "Contact Us",
+      appointment: "Schedule Appointment",
+      discover: "Discover our Services"
+    },
+    footer: {
+      description: "LKS Bodyguard - Your trusted partner for exceptional close protection in Miami.",
+      links: {
+        privacy: "Privacy Policy",
+        terms: "Terms of Use",
+        legal: "Legal Notice"
+      },
+      rights: "All rights reserved."
+    }
+  },
+  ht: {
+    tagline: "Sekirite Prive",
+    language: "Lang",
+    nav: {
+      home: "Akèy",
+      services: "Sèvis yo",
+      about: "Konsènan nou",
+      testimonials: "Temwayaj",
+      contact: "Kontak"
+    },
+    hero: {
+      badge: "Pwoteksyon Prestijye",
+      title: "BODYGUARD",
+      subtitle: "Pwoteksyon diskrè ak pwofesyonèl pou kliyan eksepsyonèl yo nan Miami. Sekirite ou se priyorite nou nimewo yon.",
+      stats: {
+        experience: "Ane Eksperyans",
+        clients: "Kliyan Pwoteje",
+        availability: "Disponibilite"
+      }
+    },
+    services: {
+      title: "Sèvis Nou Yo",
+      subtitle: "Yon seri konplè sèvis pwoteksyon ki adapte ak bezwen espesifik ou yo",
+      personal: {
+        title: "Pwoteksyon Pèsonèl",
+        description: "Ajan sekirite ki gen bon kalifikasyon pou pwoteksyon ou chak jou."
+      },
+      event: {
+        title: "Sekirite Aktivite",
+        description: "Sekirite konplè pou aktivite prive ak pwofesyonèl ou yo."
+      },
+      transport: {
+        title: "Transpò Sekirize",
+        description: "Machin pwoteje ak chofè pwofesyonèl pou vwayaj ou yo."
+      },
+      residence: {
+        title: "Sekirite Kay",
+        description: "Pwoteksyon kay ou ak siveyans 24 sou 24."
+      },
+      travel: {
+        title: "Akonpanye Vwayaj",
+        description: "Pwoteksyon pandan vwayaj nasyonal ak entènasyonal ou yo."
+      },
+      consulting: {
+        title: "Konsèy Sekirite",
+        description: "Evalyasyon risk ak rekòmandasyon pèsonalize."
+      }
+    },
+    about: {
+      title: "Poukisa Chwazi LKS Bodyguard?",
+      subtitle: "Ekselans nan sèvis sekirite ou a",
+      experience: {
+        title: "Ekspètiz Rekonèt",
+        description: "Plis pase 15 ane eksperyans nan pwoteksyon moun enpòtan yo."
+      },
+      discretion: {
+        title: "Diskreyon Konplè",
+        description: "Ajan nou yo travay ak pi gwo diskreyon pou konsève vi prive ou."
+      },
+      availability: {
+        title: "Disponibilite 24/7",
+        description: "Yon ekip ki disponib tout tan pou reponn tout bezwen sekirite ou yo."
+      },
+      technology: {
+        title: "Teknoloji Avanse",
+        description: "Ekipman modèn ak sistèm kominikasyon sekirize."
+      }
+    },
+    testimonials: {
+      title: "Temwayaj Kliyan",
+      subtitle: "Konfyans kliyan nou yo se pi bèl rekonpans nou an",
+      client1: {
+        name: "Maria Rodriguez",
+        role: "Direktè Biznis",
+        text: "LKS Bodyguard chanje fason mwen wè sekirite a. Pwofesyonalis ak diskreyon yo eksepsyonèl."
+      },
+      client2: {
+        name: "James Wilson",
+        role: "Envestisè",
+        text: "Yon ekip remakab ki konbine konpetans teknik ak bon jan edikasyon. Mwen rekòmande san ezitasyon."
+      },
+      client3: {
+        name: "Sophie Dubois",
+        role: "Pèsonalite Piblik",
+        text: "Gras ak LKS, mwen ka fè travay mwen ak kè poze konplètman. Pwoteksyon yo pa wè men li efikas."
+      }
+    },
+    contact: {
+      title: "Pran Randevou",
+      subtitle: "Kontakte nou pou yon konsèltasyon pèsonalize ak konfidansyèl",
+      form: {
+        name: "Non konplè",
+        email: "Adrès imel",
+        phone: "Nimewo telefòn",
+        service: "Sèvis ou vle",
+        message: "Mesaj",
+        submit: "Mande Randevou"
+      },
+      info: {
+        address: "Miami, Florid, Etazini",
+        phone: "+1 (305) 123-4567",
+        email: "contact@lksbodyguard.com"
+      }
+    },
+    cta: {
+      contact: "Kontakte Nou",
+      appointment: "Pran Randevou",
+      discover: "Dekouvri Sèvis Nou Yo"
+    },
+    footer: {
+      description: "LKS Bodyguard - Patnè konfyans ou pou pwoteksyon eksepsyonèl nan Miami.",
+      links: {
+        privacy: "Politik Konfidansyalite",
+        terms: "Kondisyon Itilizasyon",
+        legal: "Mansyon Legal"
+      },
+      rights: "Tout dwa rezève."
+    }
+  },
+  es: {
+    tagline: "Seguridad Privada",
+    language: "Idioma",
+    nav: {
+      home: "Inicio",
+      services: "Servicios",
+      about: "Acerca de",
+      testimonials: "Testimonios",
+      contact: "Contacto"
+    },
+    hero: {
+      badge: "Protección de Prestigio",
+      title: "BODYGUARD",
+      subtitle: "Protección cercana, discreta y profesional para una clientela de excepción en Miami. Su seguridad es nuestra máxima prioridad.",
+      stats: {
+        experience: "Años de Experiencia",
+        clients: "Clientes Protegidos",
+        availability: "Disponibilidad"
+      }
+    },
+    services: {
+      title: "Nuestros Servicios",
+      subtitle: "Una gama completa de servicios de protección adaptados a sus necesidades específicas",
+      personal: {
+        title: "Protección Personal",
+        description: "Agentes de seguridad altamente calificados para su protección diaria."
+      },
+      event: {
+        title: "Seguridad para Eventos",
+        description: "Seguridad integral para sus eventos privados y profesionales."
+      },
+      transport: {
+        title: "Transporte Seguro",
+        description: "Vehículos blindados y conductores profesionales para sus desplazamientos."
+      },
+      residence: {
+        title: "Seguridad Residencial",
+        description: "Protección de su hogar y vigilancia 24/7."
+      },
+      travel: {
+        title: "Acompañamiento en Viajes",
+        description: "Protección durante sus desplazamientos nacionales e internacionales."
+      },
+      consulting: {
+        title: "Consultoría en Seguridad",
+        description: "Evaluación de riesgos y recomendaciones personalizadas."
+      }
+    },
+    about: {
+      title: "¿Por qué elegir LKS Bodyguard?",
+      subtitle: "Excelencia al servicio de su seguridad",
+      experience: {
+        title: "Experiencia Reconocida",
+        description: "Más de 15 años de experiencia en la protección cercana de personalidades de alto nivel."
+      },
+      discretion: {
+        title: "Discreción Absoluta",
+        description: "Nuestros agentes operan con la máxima discreción para preservar su privacidad."
+      },
+      availability: {
+        title: "Disponibilidad 24/7",
+        description: "Un equipo disponible en todo momento para responder a todas sus necesidades de seguridad."
+      },
+      technology: {
+        title: "Tecnologías Avanzadas",
+        description: "Equipos de última generación y sistemas de comunicación seguros."
+      }
+    },
+    testimonials: {
+      title: "Testimonios de Clientes",
+      subtitle: "La confianza de nuestros clientes es nuestra mayor recompensa",
+      client1: {
+        name: "Maria Rodriguez",
+        role: "Directora de empresa",
+        text: "LKS Bodyguard ha transformado mi percepción de la seguridad. Su profesionalismo y discreción son excepcionales."
+      },
+      client2: {
+        name: "James Wilson",
+        role: "Inversor",
+        text: "Un equipo notable que combina competencia técnica y saber estar. Lo recomiendo sin dudar."
+      },
+      client3: {
+        name: "Sophie Dubois",
+        role: "Figura Pública",
+        text: "Gracias a LKS, puedo ocuparme de mis asuntos con total tranquilidad. Su protección es invisible pero eficaz."
+      }
+    },
+    contact: {
+      title: "Solicite una Cita",
+      subtitle: "Contáctenos para una consulta personalizada y confidencial",
+      form: {
+        name: "Nombre completo",
+        email: "Correo electrónico",
+        phone: "Número de teléfono",
+        service: "Servicio deseado",
+        message: "Mensaje",
+        submit: "Solicitar una Cita"
+      },
+      info: {
+        address: "Miami, Florida, Estados Unidos",
+        phone: "+1 (305) 123-4567",
+        email: "contact@lksbodyguard.com"
+      }
+    },
+    cta: {
+      contact: "Contáctenos",
+      appointment: "Solicitar Cita",
+      discover: "Descubra nuestros Servicios"
+    },
+    footer: {
+      description: "LKS Bodyguard - Su socio de confianza para una protección cercana excepcional en Miami.",
+      links: {
+        privacy: "Política de Privacidad",
+        terms: "Términos de Uso",
+        legal: "Aviso Legal"
+      },
+      rights: "Todos los derechos reservados."
+    }
+  }
 };
-
-export default Header;
