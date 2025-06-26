@@ -14,9 +14,15 @@ export const translations = {
       title: "BODYGUARD",
       subtitle: "Protection rapprochée discrète et professionnelle pour une clientèle d'exception à Miami. Votre sécurité est notre priorité absolue.",
       stats: {
-        experience: "Années d'Expérience",
-        clients: "Clients Protégés",
-        availability: "Disponibilité"
+        experience: "15+ Années d'Expérience",
+        clients: "500+ Clients Satisfaits",
+        availability: "24/7 Support Disponible",
+        confidentiality: "100% Confidentialité"
+      },
+      certifications: {
+        licensed: "✓ Licencié & Assuré",
+        iso: "🛡️ Certifié ISO",
+        stars: "⭐ 5 Étoiles"
       }
     },
     services: {
@@ -30,21 +36,21 @@ export const translations = {
         title: "Sécurité Événementielle",
         description: "Sécurisation complète de vos événements privés et professionnels."
       },
-      transport: {
-        title: "Transport Sécurisé",
-        description: "Véhicules blindés et chauffeurs professionnels pour vos déplacements."
-      },
-      residence: {
-        title: "Sécurité Résidentielle",
-        description: "Protection de votre domicile et surveillance 24h/24."
-      },
-      travel: {
-        title: "Accompagnement Voyage",
-        description: "Protection lors de vos déplacements nationaux et internationaux."
+      executive: {
+        title: "Protection Exécutive",
+        description: "Protection rapprochée pour dirigeants et VIP."
       },
       consulting: {
         title: "Conseil en Sécurité",
         description: "Évaluation des risques et recommandations personnalisées."
+      },
+      close: {
+        title: "Protection Rapprochée",
+        description: "Sécurité discrète pour personnalités et familles."
+      },
+      management: {
+        title: "Gestion de la Sécurité",
+        description: "Gestion complète de vos dispositifs de sécurité."
       }
     },
     about: {
@@ -67,6 +73,14 @@ export const translations = {
         description: "Équipements de pointe et systèmes de communication sécurisés."
       }
     },
+    cta: {
+      customProtection: "Besoin d'une Protection Sur Mesure ?",
+      customProtectionDesc: "Chaque client est unique. Contactez-nous pour une évaluation personnalisée de vos besoins de sécurité.",
+      freeConsult: "Consultation Gratuite",
+      contact: "Nous Contacter",
+      appointment: "Prendre Rendez-vous",
+      discover: "Découvrir nos Services"
+    },
     testimonials: {
       title: "Témoignages Clients",
       subtitle: "La confiance de nos clients est notre plus belle récompense",
@@ -87,7 +101,7 @@ export const translations = {
       }
     },
     contact: {
-      title: "Prenez Rendez-vous",
+      title: "Demande de Rendez-vous",
       subtitle: "Contactez-nous pour une consultation personnalisée et confidentielle",
       form: {
         name: "Nom complet",
@@ -95,27 +109,42 @@ export const translations = {
         phone: "Numéro de téléphone",
         service: "Service souhaité",
         message: "Message",
-        submit: "Demander un Rendez-vous"
+        submit: "Demander un Rendez-vous",
+        or: "ou",
+        googleMeet: "Planifier un Google Meet"
       },
       info: {
+        title: "Informations de Contact",
         address: "Miami, Floride, États-Unis",
         phone: "+1 (305) 123-4567",
-        email: "contact@lksbodyguard.com"
-      }
-    },
-    cta: {
-      contact: "Nous Contacter",
-      appointment: "Prendre Rendez-vous",
-      discover: "Découvrir nos Services"
+        email: "contact@lksbodyguard.com",
+        availability: "Disponibilité",
+        emergency: "Urgences",
+        emergencyHours: "24h/24 - 7j/7",
+        consult: "Consultations",
+        consultHours: "Lun-Ven 9h-18h",
+        weekend: "Weekend",
+        weekendHours: "Sur rendez-vous"
+      },
+      guarantees: {
+        title: "Nos Garanties",
+        confidentiality: "Confidentialité absolue",
+        response: "Réponse sous 24h",
+        freeConsult: "Consultation gratuite",
+        quote: "Devis personnalisé"
+      },
+      quickContact: "Contact Rapide"
     },
     footer: {
       description: "LKS Bodyguard - Votre partenaire de confiance pour une protection rapprochée d'exception à Miami.",
       links: {
         privacy: "Politique de Confidentialité",
         terms: "Conditions d'Utilisation",
-        legal: "Mentions Légales"
+        legal: "Informations Légales"
       },
-      rights: "Tous droits réservés."
+      rights: "Tous droits réservés.",
+      certifiedProtection: "Protection Certifiée",
+      license: "Licence & Assurance"
     }
   },
   en: {
@@ -133,9 +162,15 @@ export const translations = {
       title: "BODYGUARD",
       subtitle: "Discreet and professional close protection for exceptional clientele in Miami. Your security is our absolute priority.",
       stats: {
-        experience: "Years of Experience",
-        clients: "Protected Clients",
-        availability: "Availability"
+        experience: "15+ Years of Experience",
+        clients: "500+ Satisfied Clients",
+        availability: "24/7 Support Available",
+        confidentiality: "100% Confidentiality"
+      },
+      certifications: {
+        licensed: "✓ Licensed & Insured",
+        iso: "🛡️ ISO Certified",
+        stars: "⭐ 5 Stars"
       }
     },
     services: {
@@ -149,21 +184,21 @@ export const translations = {
         title: "Event Security",
         description: "Complete security for your private and professional events."
       },
-      transport: {
-        title: "Secure Transport",
-        description: "Armored vehicles and professional drivers for your travels."
-      },
-      residence: {
-        title: "Residential Security",
-        description: "Home protection and 24/7 surveillance."
-      },
-      travel: {
-        title: "Travel Escort",
-        description: "Protection during your domestic and international travels."
+      executive: {
+        title: "Executive Protection",
+        description: "Close protection for executives and VIPs."
       },
       consulting: {
         title: "Security Consulting",
         description: "Risk assessment and personalized recommendations."
+      },
+      close: {
+        title: "Close Protection",
+        description: "Discreet security for personalities and families."
+      },
+      management: {
+        title: "Security Management",
+        description: "Comprehensive management of your security systems."
       }
     },
     about: {
@@ -186,6 +221,14 @@ export const translations = {
         description: "State-of-the-art equipment and secure communication systems."
       }
     },
+    cta: {
+      customProtection: "Need Tailored Protection?",
+      customProtectionDesc: "Every client is unique. Contact us for a personalized security assessment.",
+      freeConsult: "Free Consultation",
+      contact: "Contact Us",
+      appointment: "Schedule Appointment",
+      discover: "Discover our Services"
+    },
     testimonials: {
       title: "Client Testimonials",
       subtitle: "Our clients' trust is our greatest reward",
@@ -206,7 +249,7 @@ export const translations = {
       }
     },
     contact: {
-      title: "Schedule an Appointment",
+      title: "Request an Appointment",
       subtitle: "Contact us for a personalized and confidential consultation",
       form: {
         name: "Full name",
@@ -214,27 +257,42 @@ export const translations = {
         phone: "Phone number",
         service: "Desired service",
         message: "Message",
-        submit: "Request an Appointment"
+        submit: "Request an Appointment",
+        or: "or",
+        googleMeet: "Schedule a Google Meet"
       },
       info: {
+        title: "Contact Information",
         address: "Miami, Florida, United States",
         phone: "+1 (305) 123-4567",
-        email: "contact@lksbodyguard.com"
-      }
-    },
-    cta: {
-      contact: "Contact Us",
-      appointment: "Schedule Appointment",
-      discover: "Discover our Services"
+        email: "contact@lksbodyguard.com",
+        availability: "Availability",
+        emergency: "Emergencies",
+        emergencyHours: "24/7",
+        consult: "Consultations",
+        consultHours: "Mon-Fri 9am-6pm",
+        weekend: "Weekend",
+        weekendHours: "By appointment"
+      },
+      guarantees: {
+        title: "Our Guarantees",
+        confidentiality: "Absolute confidentiality",
+        response: "Response within 24h",
+        freeConsult: "Free consultation",
+        quote: "Personalized quote"
+      },
+      quickContact: "Quick Contact"
     },
     footer: {
       description: "LKS Bodyguard - Your trusted partner for exceptional close protection in Miami.",
       links: {
         privacy: "Privacy Policy",
         terms: "Terms of Use",
-        legal: "Legal Notice"
+        legal: "Legal Information"
       },
-      rights: "All rights reserved."
+      rights: "All rights reserved.",
+      certifiedProtection: "Certified Protection",
+      license: "License & Insurance"
     }
   },
   ht: {
@@ -252,9 +310,15 @@ export const translations = {
       title: "BODYGUARD",
       subtitle: "Pwoteksyon diskrè ak pwofesyonèl pou kliyan eksepsyonèl yo nan Miami. Sekirite ou se priyorite nou nimewo yon.",
       stats: {
-        experience: "Ane Eksperyans",
-        clients: "Kliyan Pwoteje",
-        availability: "Disponibilite"
+        experience: "15+ Ane Eksperyans",
+        clients: "500+ Kliyan Satisfè",
+        availability: "24/7 Sipò Disponib",
+        confidentiality: "100% Konfidansyalite"
+      },
+      certifications: {
+        licensed: "✓ Lisansye & Asire",
+        iso: "🛡️ Sètifye ISO",
+        stars: "⭐ 5 Etwal"
       }
     },
     services: {
@@ -268,21 +332,21 @@ export const translations = {
         title: "Sekirite Aktivite",
         description: "Sekirite konplè pou aktivite prive ak pwofesyonèl ou yo."
       },
-      transport: {
-        title: "Transpò Sekirize",
-        description: "Machin pwoteje ak chofè pwofesyonèl pou vwayaj ou yo."
-      },
-      residence: {
-        title: "Sekirite Kay",
-        description: "Pwoteksyon kay ou ak siveyans 24 sou 24."
-      },
-      travel: {
-        title: "Akonpanye Vwayaj",
-        description: "Pwoteksyon pandan vwayaj nasyonal ak entènasyonal ou yo."
+      executive: {
+        title: "Pwoteksyon Egzekitif",
+        description: "Pwoteksyon pèsonèl pou dirijan ak VIP."
       },
       consulting: {
         title: "Konsèy Sekirite",
         description: "Evalyasyon risk ak rekòmandasyon pèsonalize."
+      },
+      close: {
+        title: "Pwoteksyon Rapprochée",
+        description: "Sekirite diskre pou pèsonalite ak fanmi."
+      },
+      management: {
+        title: "Jesyon Sekirite",
+        description: "Jesyon konplè sistèm sekirite ou yo."
       }
     },
     about: {
@@ -305,6 +369,14 @@ export const translations = {
         description: "Ekipman modèn ak sistèm kominikasyon sekirize."
       }
     },
+    cta: {
+      customProtection: "Bezwen Pwoteksyon Sou Mezi?",
+      customProtectionDesc: "Chak kliyan inik. Kontakte nou pou yon evalyasyon pèsonalize de bezwen sekirite ou.",
+      freeConsult: "Konsiltasyon gratis",
+      contact: "Kontakte Nou",
+      appointment: "Pran Randevou",
+      discover: "Dekouvri Sèvis Nou Yo"
+    },
     testimonials: {
       title: "Temwayaj Kliyan",
       subtitle: "Konfyans kliyan nou yo se pi bèl rekonpans nou an",
@@ -325,35 +397,50 @@ export const translations = {
       }
     },
     contact: {
-      title: "Pran Randevou",
-      subtitle: "Kontakte nou pou yon konsèltasyon pèsonalize ak konfidansyèl",
+      title: "Mande Randevou",
+      subtitle: "Kontakte nou pou yon konsiltasyon pèsonalize ak konfidansyèl",
       form: {
         name: "Non konplè",
         email: "Adrès imel",
         phone: "Nimewo telefòn",
         service: "Sèvis ou vle",
         message: "Mesaj",
-        submit: "Mande Randevou"
+        submit: "Mande Randevou",
+        or: "oswa",
+        googleMeet: "Planifye yon Google Meet"
       },
       info: {
+        title: "Enfòmasyon Kontak",
         address: "Miami, Florid, Etazini",
         phone: "+1 (305) 123-4567",
-        email: "contact@lksbodyguard.com"
-      }
-    },
-    cta: {
-      contact: "Kontakte Nou",
-      appointment: "Pran Randevou",
-      discover: "Dekouvri Sèvis Nou Yo"
+        email: "contact@lksbodyguard.com",
+        availability: "Disponibilite",
+        emergency: "Ijans",
+        emergencyHours: "24/24 - 7/7",
+        consult: "Konsiltasyon",
+        consultHours: "Lendi-Vandredi 9h-18h",
+        weekend: "Wikenn",
+        weekendHours: "Sou randevou"
+      },
+      guarantees: {
+        title: "Garanti Nou",
+        confidentiality: "Konfidansyalite absoli",
+        response: "Repons an mwens pase 24h",
+        freeConsult: "Konsiltasyon gratis",
+        quote: "Devis pèsonalize"
+      },
+      quickContact: "Kontak Rapid"
     },
     footer: {
       description: "LKS Bodyguard - Patnè konfyans ou pou pwoteksyon eksepsyonèl nan Miami.",
       links: {
         privacy: "Politik Konfidansyalite",
         terms: "Kondisyon Itilizasyon",
-        legal: "Mansyon Legal"
+        legal: "Enfòmasyon Legal"
       },
-      rights: "Tout dwa rezève."
+      rights: "Tout dwa rezève.",
+      certifiedProtection: "Pwoteksyon Sètifye",
+      license: "Lisans & Asirans"
     }
   },
   es: {
@@ -371,9 +458,15 @@ export const translations = {
       title: "BODYGUARD",
       subtitle: "Protección cercana, discreta y profesional para una clientela de excepción en Miami. Su seguridad es nuestra máxima prioridad.",
       stats: {
-        experience: "Años de Experiencia",
-        clients: "Clientes Protegidos",
-        availability: "Disponibilidad"
+        experience: "15+ Años de Experiencia",
+        clients: "500+ Clientes Satisfechos",
+        availability: "Soporte 24/7 Disponible",
+        confidentiality: "100% Confidencialidad"
+      },
+      certifications: {
+        licensed: "✓ Licenciado & Asegurado",
+        iso: "🛡️ Certificado ISO",
+        stars: "⭐ 5 Estrellas"
       }
     },
     services: {
@@ -387,21 +480,21 @@ export const translations = {
         title: "Seguridad para Eventos",
         description: "Seguridad integral para sus eventos privados y profesionales."
       },
-      transport: {
-        title: "Transporte Seguro",
-        description: "Vehículos blindados y conductores profesionales para sus desplazamientos."
-      },
-      residence: {
-        title: "Seguridad Residencial",
-        description: "Protección de su hogar y vigilancia 24/7."
-      },
-      travel: {
-        title: "Acompañamiento en Viajes",
-        description: "Protección durante sus desplazamientos nacionales e internacionales."
+      executive: {
+        title: "Protección Ejecutiva",
+        description: "Protección cercana para ejecutivos y VIPs."
       },
       consulting: {
         title: "Consultoría en Seguridad",
         description: "Evaluación de riesgos y recomendaciones personalizadas."
+      },
+      close: {
+        title: "Protección Cercana",
+        description: "Seguridad discreta para personalidades y familias."
+      },
+      management: {
+        title: "Gestión de Seguridad",
+        description: "Gestión integral de sus sistemas de seguridad."
       }
     },
     about: {
@@ -423,6 +516,14 @@ export const translations = {
         title: "Tecnologías Avanzadas",
         description: "Equipos de última generación y sistemas de comunicación seguros."
       }
+    },
+    cta: {
+      customProtection: "¿Necesita Protección a Medida?",
+      customProtectionDesc: "Cada cliente es único. Contáctenos para una evaluación personalizada de sus necesidades de seguridad.",
+      freeConsult: "Consulta Gratuita",
+      contact: "Contáctenos",
+      appointment: "Solicitar Cita",
+      discover: "Descubra nuestros Servicios"
     },
     testimonials: {
       title: "Testimonios de Clientes",
@@ -452,27 +553,42 @@ export const translations = {
         phone: "Número de teléfono",
         service: "Servicio deseado",
         message: "Mensaje",
-        submit: "Solicitar una Cita"
+        submit: "Solicitar una Cita",
+        or: "o",
+        googleMeet: "Planificar un Google Meet"
       },
       info: {
+        title: "Información de Contacto",
         address: "Miami, Florida, Estados Unidos",
         phone: "+1 (305) 123-4567",
-        email: "contact@lksbodyguard.com"
-      }
-    },
-    cta: {
-      contact: "Contáctenos",
-      appointment: "Solicitar Cita",
-      discover: "Descubra nuestros Servicios"
+        email: "contact@lksbodyguard.com",
+        availability: "Disponibilidad",
+        emergency: "Urgencias",
+        emergencyHours: "24h/24 - 7d/7",
+        consult: "Consultas",
+        consultHours: "Lun-Vie 9h-18h",
+        weekend: "Fin de semana",
+        weekendHours: "Con cita previa"
+      },
+      guarantees: {
+        title: "Nuestras Garantías",
+        confidentiality: "Confidencialidad absoluta",
+        response: "Respuesta en menos de 24h",
+        freeConsult: "Consulta gratuita",
+        quote: "Presupuesto personalizado"
+      },
+      quickContact: "Contacto Rápido"
     },
     footer: {
       description: "LKS Bodyguard - Su socio de confianza para una protección cercana excepcional en Miami.",
       links: {
         privacy: "Política de Privacidad",
         terms: "Términos de Uso",
-        legal: "Aviso Legal"
+        legal: "Información Legal"
       },
-      rights: "Todos los derechos reservados."
+      rights: "Todos los derechos reservados.",
+      certifiedProtection: "Protección Certificada",
+      license: "Licencia & Seguro"
     }
   }
 };
