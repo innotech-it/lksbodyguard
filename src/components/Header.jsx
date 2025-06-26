@@ -8,7 +8,8 @@ const Header = ({ currentLang, setCurrentLang, translations }) => {
   const languages = [
     { code: 'fr', name: 'Français', flag: '🇫🇷' },
     { code: 'en', name: 'English', flag: '🇺🇸' },
-    { code: 'ht', name: 'Kreyòl', flag: '🇭🇹' }
+    { code: 'ht', name: 'Kreyòl', flag: '🇭🇹' },
+    { code: 'es', name: 'Español', flag: '🇪🇸' }
   ];
 
   const scrollToSection = (sectionId) => {
