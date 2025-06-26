@@ -2,21 +2,10 @@ import React from 'react';
 import { Card, CardContent } from './ui/card';
 import { Star, Quote } from 'lucide-react';
 
+const avatars = ['👩‍💼', '👨‍💼', '👩‍🎤'];
+
 const Testimonials = ({ currentLang, translations }) => {
-  const testimonials = [
-    {
-      key: 'client1',
-      avatar: '👩‍💼'
-    },
-    {
-      key: 'client2',
-      avatar: '👨‍💼'
-    },
-    {
-      key: 'client3',
-      avatar: '👩‍🎤'
-    }
-  ];
+  const testimonials = translations[currentLang].testimonials.list;
 
   return (
     <section id="testimonials" className="py-20 bg-gray-50">
@@ -33,7 +22,7 @@ const Testimonials = ({ currentLang, translations }) => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {testimonials.map((testimonial, index) => (
             <Card 
-              key={testimonial.key} 
+              key={index} 
               className="luxury-shadow hover-lift bg-white border-0 overflow-hidden"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
@@ -45,7 +34,7 @@ const Testimonials = ({ currentLang, translations }) => {
 
                 {/* Testimonial Text */}
                 <p className="text-gray-700 mb-6 leading-relaxed italic">
-                  "{translations[currentLang].testimonials[testimonial.key].text}"
+                  "{testimonial.text}"
                 </p>
 
                 {/* Stars */}
@@ -58,14 +47,14 @@ const Testimonials = ({ currentLang, translations }) => {
                 {/* Client Info */}
                 <div className="flex items-center">
                   <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center text-2xl mr-4">
-                    {testimonial.avatar}
+                    {avatars[index] || '👤'}
                   </div>
                   <div>
                     <h4 className="font-semibold text-gray-900">
-                      {translations[currentLang].testimonials[testimonial.key].name}
+                      {testimonial.name}
                     </h4>
                     <p className="text-sm text-gray-600">
-                      {translations[currentLang].testimonials[testimonial.key].role}
+                      {testimonial.role}
                     </p>
                   </div>
                 </div>
@@ -103,4 +92,3 @@ const Testimonials = ({ currentLang, translations }) => {
 };
 
 export default Testimonials;
-
